@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.example.demo.model.Account;
-
 import jakarta.servlet.http.HttpSession;
 
 @Controller
@@ -18,7 +16,7 @@ public class AccountController {
 	HttpSession session;
 
 	@Autowired
-	Account account;
+	//Account account;
 
 	// ログイン画面を表示
 	@GetMapping({ "/", "/login", "/logout" })
