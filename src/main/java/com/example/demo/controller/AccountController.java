@@ -25,6 +25,9 @@ public class AccountController {
 			Model model) {
 		// セッション情報を全てクリアする
 		session.invalidate();
+
+		// セッション情報を全てクリアする
+		session.invalidate();
 		// エラーパラメータのチェック
 		if (error.equals("notLoggedIn")) {
 			model.addAttribute("message", "ログインしてください");
